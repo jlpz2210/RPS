@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/rock-paper-scissors.svg" type="image/x-icon">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header class="head-main">
+        <div class="title">
+            <h1 class="title-1">Piedra, papel o tijera.</h1>
+            <h3>Marcador:</h3>
+            <span id="myPoints">0</span> <span>-</span> <span id="compPoints">0</span><br>
+            <button class="re-butt" onclick="restart();">Reiniciar marcador</button>
+        </div>
+    </header>
+    <section id="main">
+        <div class="left-rps">
+            <h1>Tú</h1>
+            <h3>Selecciona una opción</h3>
+            <div class="icon-list">
+                <ul>
+                    <li><button onclick="chosePaper();"><img src="img/paper.svg" alt="" class="icon"></button></li>
+                    <li><button onclick="choseRock();"><img src="img/rock.svg" alt="" class="icon"></button></li>
+                    <li><button onclick="choseScissors();"><img src="img/scissors.svg" alt="" class="icon"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-rps">
+            <h1>Computadora</h1>
+            <h3>Ya sabe qué elegiste ;)</h3>
+            <div class="icon-list">
+                <ul>
+                    <li><img src="img/paper.svg" alt="" class="icon"></li>
+                    <li><img src="img/rock.svg" alt="" class="icon"></li>
+                    <li><img src="img/scissors.svg" alt="" class="icon"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div>Made by: Juan de Dios López Ramos :P</div>
+    </footer>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
